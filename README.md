@@ -16,12 +16,11 @@ First you'll want to create your Slack Slash Command, which you can do by going 
 
 During setup, have your slash command submit a POST to your app's `/store` endpoint, e.g. `https://app-name.herokuapp.com/store`.
 
-Make a note of the **Token**, as you'll need it later to help guard against cross-site request forgery.
+Make a note of the `Token`, as you'll need it later to help guard against cross-site request forgery.
 
 ### Slack Channel Listener setup
-1. Head to Slack -> CustomIntegrations -> **OutgoingWebhooks** and add a new configuration. Set the **Channel** to listen to, and add your app's `/parse` endpoint (e.g. `https://app-name.herokuapp.com/parse`) to **URL(s)**.
-..Make a note of the **Token**, as you'll need it later to help guard against cross-site request forgery.
-2. Head to Slack -> CustomIntegrations -> **IncomingWebhooks** and add a new configuration. Note the **Webhook URL** for the settings and customize the look of the incoming message bot to your preference.
+1. Head to Slack > CustomIntegrations > `Outgoing Webhooks` and add a new configuration. Set the `Channel` to listen to, and add your app's `/parse` endpoint (e.g. `https://app-name.herokuapp.com/parse`) to **URL(s)**. Make a note of the `Token`, as you'll need it later to help guard against cross-site request forgery.
+2. Head to Slack > CustomIntegrations > `Incoming Webhooks` and add a new configuration. Note the `Webhook URL` for the settings and customize the look of the incoming message bot to your preference.
 
 ### Spotify
 
@@ -36,8 +35,8 @@ Also, don't forget to make a playlist. If you do this through [Spotify's web int
 Once you've cloned OneJukeBox or hit the "Deploy with Heroku" button you'll need to setup the following environment variables. These can either be stored in a `.env` file or set up as config variables in Heroku.
 
 * `SLACK_TOKEN` - The token from Slack's Slash Command.
-* `SLACK_TOKEN2` - The token from Slack's OutgoingWebhook.
-* `SLACK_INCOMING_HOOK_URL` - The WebhookURL from Slack's IncomingWebhooks.
+* `SLACK_TOKEN2` - The token from Slack's Outgoing Webhook.
+* `SLACK_INCOMING_HOOK_URL` - The WebhookURL from Slack's Incoming Webhooks.
 * `SPOTIFY_KEY` - Your Spotify application key (a.k.a Client ID).
 * `SPOTIFY_SECRET` - Your Spotify application secret (a.k.a Client Secret).
 * `SPOTIFY_USERNAME` - Your Spotify username.
