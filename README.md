@@ -7,6 +7,8 @@ Simply create a Slash Command, such as `/jukebox`, which accepts a track name (a
     
 And/Or add it as a listener on your slack channel; paste YouTube/Spotify links to get your song added to the shared playlist!
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Installation
 
 ### Slash Command setup
@@ -31,7 +33,7 @@ Also, don't forget to make a playlist. If you do this through [Spotify's web int
 
 ### Environment variables
 
-Once you've cloned slackbox or hit the "Deploy with Heroku" button you'll need to setup the following environment variables. These can either be stored in a `.env` or set up as config variables in Heroku.
+Once you've cloned OneJukeBox or hit the "Deploy with Heroku" button you'll need to setup the following environment variables. These can either be stored in a `.env` file or set up as config variables in Heroku.
 
 * `SLACK_TOKEN` - The token from Slack's Slash Command.
 * `SLACK_TOKEN2` - The token from Slack's OutgoingWebhook.
@@ -44,4 +46,4 @@ Once you've cloned slackbox or hit the "Deploy with Heroku" button you'll need t
 
 ### Authentication
 
-Visit your OneJukeBox's home page to authenticate yourself with Spotify and you should be all set!
+Visit your OneJukeBox's `/authorise` end to authenticate yourself with Spotify and you should be all set!
